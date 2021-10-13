@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 
-class Twitter extends Component{
+class Twitter_Classe extends Component{
 
      state={
           tweet:'title'
@@ -10,7 +10,7 @@ class Twitter extends Component{
           const {posts,loading}=this.props
           console.log('componentDidMount',posts)
           console.log('componentDidMount:loading',loading)
-       }
+     }
 
      componentDidUpdate(prevProps){
           const {loading}=this.props
@@ -45,4 +45,4 @@ class Twitter extends Component{
      }
 }
 
-export default Twitter
+export default Twitter_Classe

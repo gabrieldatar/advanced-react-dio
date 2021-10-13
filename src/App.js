@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
-import Twitter from './Twitter'
+import Twitter_Classe from './Twitter_Classe'
+import Twitter_Hooks from './Twitter_Hooks'
 
 class App extends Component{
   state={
@@ -35,7 +36,7 @@ class App extends Component{
       <div>
         <button onClick={this.onRemove}>Remover component</button>
         {this.state.actived && (
-          <Twitter posts={posts} loading={this.state.loading}/>
+          <Twitter_Hooks posts={posts} loading={this.state.loading}/>
         )}
       </div>
     )
