@@ -1,31 +1,34 @@
 import React,{Fragment} from 'react'
 
-const store=[{
-     type:'Roupa'
-},{
-     type:'Calado'
-},{
-     type:'Camiseta'
-}]
+const store=['','','']
 
-function Column({type}){
+function Column(){
      return(
           <tr>
-               <td>{type.name.console}</td>
+               <td>Tênis</td>
+               <td>Roupa</td>
           </tr>
 
      )
 }
 
-function App(){
+function App_Fragments(){
+
      const renderColumns=(element,key)=>(
           <Fragment key={`column-${key}`}>
-               <Column type={element.type}/>
+               <Column/>
           </Fragment>
      )
 
      return(
           <>
+               <div>
+                    ReactJS!!!
+
+               </div>
+               <div>
+                    Avançado!!!
+               </div>
                <table>
                     {store.map(renderColumns)}
                </table>
@@ -33,4 +36,4 @@ function App(){
      )
 }
 
-export default App
+export default App_Fragments
